@@ -3,98 +3,122 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>150</y>
+      <x>80</x>
+      <y>130</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Account
 --
-+ 
++ name : string
++ password : string
 --
-+ listAction() : void</panel_attributes>
++ login() : void
++ logout() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>400</y>
-      <w>210</w>
+      <x>390</x>
+      <y>380</y>
+      <w>330</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Student
 --
-+ 
++ token : string
++ class : string
 --
-+ listAction() : void</panel_attributes>
++ joinEvaluation() : void
++ answere() : void
++ showEvaluation() : void
++ validateToken(token : string) : bool
++ generateToken(dueDate : DateTime) : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>170</y>
+      <x>390</x>
+      <y>150</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Teacher
 --
-+ 
+
 --
-+ listAction() : void</panel_attributes>
++ publish() : void
++ evaluate() : void
++ releaseEvaluation() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>80</y>
+      <x>840</x>
+      <y>60</y>
       <w>210</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>Question
 --
-+ 
++ title : string
++ type : int
++ category : Category
 --
-+ listAction() : void</panel_attributes>
++ create() : void
++ edit() : void
++ list() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>320</y>
+      <x>840</x>
+      <y>340</y>
       <w>210</w>
-      <h>190</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Category
 --
-+ 
++ name : string
 --
-+ listAction() : void</panel_attributes>
++ list : void
++ add : void
++ edit : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>810</x>
-      <y>550</y>
+      <x>840</x>
+      <y>530</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Survey
 --
-+ 
++ name : string
++ questions : array
++ answeres : array
++ startDate : DateTime
++ endDate : DateTime
 --
-+ listAction() : void</panel_attributes>
++ create() : void
++ edit() : void
++ select() : void
++ evaluate() : void
++ list() : void
++ fill() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>230</y>
+      <x>280</x>
+      <y>210</y>
       <w>130</w>
       <h>30</h>
     </coordinates>
@@ -104,56 +128,81 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>270</y>
+      <x>280</x>
+      <y>250</y>
       <w>130</w>
       <h>270</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;110.0;250.0</additional_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;250.0;110.0;250.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>160</y>
-      <w>250</w>
+      <x>590</x>
+      <y>140</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..n
+creates &gt;</panel_attributes>
+    <additional_attributes>10.0;90.0;160.0;90.0;160.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>260</y>
+      <w>270</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..1
+creates &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0;160.0;340.0;250.0;340.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>250</y>
+      <w>50</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;90.0;230.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>280</y>
-      <w>250</w>
-      <h>360</h>
+      <x>510</x>
+      <y>560</y>
+      <w>350</w>
+      <h>140</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;230.0;340.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=1
+answeres &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;330.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>270</y>
-      <w>30</w>
-      <h>70</h>
+      <x>1040</x>
+      <y>150</y>
+      <w>170</w>
+      <h>500</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>580</x>
-      <y>490</y>
-      <w>250</w>
-      <h>200</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;230.0;180.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=0..n
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;470.0;10.0;470.0</additional_attributes>
   </element>
 </diagram>
