@@ -1,0 +1,28 @@
+{
+    "name": "eugen/eva",
+    "type": "project",
+    "license": "gpl",
+    "authors": [
+        {
+            "name": "eugen.jamry",
+            "email": "e.jamry@web.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://git@bitbucket.4meter20.net:7999/v20-int/v20_whoops.git"
+        }
+    ],
+    "require": {
+        "typo3/cms": "^8.7",
+        "friendsoftypo3/extension-builder": "^8",
+        "v20/whoops": "*"
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": "html"
+        }
+    }
+}

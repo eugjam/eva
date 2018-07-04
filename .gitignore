@@ -1,0 +1,17 @@
+.idea/
+/.idea/
+/vendor/
+vendor/
+typo3_src/
+/typo3_src/
+
+html/fileadmin/*
+html/typo3/*
+html/typo3temp/
+html/uploads/
+html/index.php
+html/typo3conf/LocalConfiguration.php
+
+html/typo3conf/ext/extension_builder
+html/typo3conf/ext/v20_whoops
+html/typo3conf/PackageStates.php
