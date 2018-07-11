@@ -1,0 +1,23 @@
+{
+    "name": "tight/eva",
+    "type": "typo3-cms-extension",
+    "description": "Ext for eva",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tight\\Eva\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tight\\Eva\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "eva": "self.version",
+        "typo3-ter/eva": "self.version"
+    }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-07-11T11:56:26Z" product-name="eva">
+		<header/>
+		<body>
+			<trans-unit id="tx_eva_domain_model_account">
+				<source>Account</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_account.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_account.password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_account.token">
+				<source>Token</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_account.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_account.class">
+				<source>Class</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_survey">
+				<source>Survey</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_survey.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_survey.questions">
+				<source>Questions</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_question.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_question.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_question.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_schoolclass">
+				<source>School Class</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_schoolclass.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_answere">
+				<source>Answere</source>
+			</trans-unit>
+			<trans-unit id="tx_eva_domain_model_answere.question">
+				<source>Question</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
